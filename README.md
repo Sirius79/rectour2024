@@ -7,4 +7,4 @@ To run this:
 2. Save it in a `data` folder at root level
 
 
-The code can be run as `python train.py`
+The code can be run as `python train.py --algo pop --device gpu`

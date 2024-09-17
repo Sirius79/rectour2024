@@ -29,3 +29,5 @@ class ReviewDataset(object):
 if __name__ == "__main__":
     review_dataset = ReviewDataset(mode='val', sample=True)
     print(review_dataset.matches_df.head())
+    print(review_dataset.reviews_df.columns)
+    print(review_dataset.users_df.columns)

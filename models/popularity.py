@@ -16,7 +16,7 @@ class PopularityModel:
         ranked_review_ids = top_ranked_reviews['review_id'].tolist()
         return ranked_review_ids
     
-    def generate_ranked_reviews(self):
+    def recommend(self):
         results = []
         
         total_pairs = self.users.shape[0]

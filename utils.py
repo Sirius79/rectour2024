@@ -4,7 +4,7 @@ def calculate_mrr_at_k(ranked_reviews_df, matches_df, k=10):
     mrr_sum = 0
     num_pairs = 0
     
-    print("Starting MRR@%d calculation.", k)
+    print(f"Starting MRR@{k} calculation")
     
     # Merge ranked reviews with matches to get ideal review for each pair
     merged_df = pd.merge(ranked_reviews_df, matches_df, on=['user_id', 'accommodation_id'], how='left')
