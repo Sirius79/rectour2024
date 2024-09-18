@@ -27,8 +27,6 @@ class EmbeddingModel(object):
         
         th.manual_seed(self.seed)
         np.random.seed(self.seed)
-        
-        print(self.users.shape[0])
     
     def preprocess(self):
         for col in ['review_title', 'review_positive', 'review_negative']:
